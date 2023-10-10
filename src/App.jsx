@@ -7,7 +7,7 @@ import './style.css'
 
 //Import Pages
 import Home from './pages/Home/index'
-import AboutKasa from './pages/about'
+import AboutKasa from './pages/A-propos'
 import Rental from './pages/Logement'
 import Error from './components/Error'
 
