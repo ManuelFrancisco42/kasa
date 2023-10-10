@@ -17,7 +17,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "sass": "sass --watch ./src/styles/main.scss:./src/style.css"
   },
   "eslintConfig": {
     "extends": [
@@ -36,8 +37,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }, 
-   "devDependencies": {
+  },
+  "devDependencies": {
+    "eslint": "^8.51.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
     "prettier": "2.8.2"
   }
 }
