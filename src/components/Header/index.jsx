@@ -4,7 +4,7 @@
 
  const navLinks = [
    { name: 'Accueil', path: '/' },
-   { name: 'A Propos', path: '/about' },
+   { name: 'A Propos', href: '/a-propos' },
  ]
 
  function Header() {
