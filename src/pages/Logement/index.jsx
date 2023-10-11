@@ -18,36 +18,18 @@ import Tags from '../../components/Tags';
  
 
 /*  Component */
-
-/* function NotFound() {
-  return (
-    <div>
-      <h1>404 - Not Found</h1>
-      <p>The page you are looking for does not exist.</p>
-    </div>
-  );
-}
- */
+ 
 function Rental() {
-  const { rentalId } = useParams();
- /*  const navigate = useNavigate(); */
-
-  const rental = rentalList.find((item) => item.id === rentalId);
-
-/*   if (!rental) {
-    // Use navigate function to redirect to the "address-not-found" page
-    navigate('/address-not-found');
-    return <NotFound />; // Render the NotFound component
-  } */
+  const { rentalId } = useParams()
     
 
+  const rental = rentalList.find((item) => item.id === rentalId)
+
+  // Use if Statement navigate to redirect to the page
+
   if (!rental) {
-    return <Navigate to="/adresse-introuvable" /> // trocai por unfindable
+    return <Navigate to="/address-not-found" />
   }
-
-
-
-
 
   return (
     <section className="rental-page">
