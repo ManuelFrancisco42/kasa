@@ -1,24 +1,21 @@
-import React from 'react';
-/* Import createRoot from react-dom */
-import { createRoot } from 'react-dom'; 
+/*  Component */
 
- /* Import Pages */
-import App from './App';
- /* createRoot from react-dom */
-const root = createRoot(document.getElementById('root')); 
-root.render(
+import React from 'react'
+import ReactDOM from 'react-dom'
+
+ /* Import  App component  */
+
+import App from './App'
+
+
+ /* Get the root element from index html  */
+
+const rootElement = document.getElementById('root')
+
+ /* Render the App  */
+
+ReactDOM.createRoot(rootElement).render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
-);
-
-
-
-
-
-
-
-
-
-
-
+)

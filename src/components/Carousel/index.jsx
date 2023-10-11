@@ -1,11 +1,13 @@
 
- /*  Import tools */
+/*  Import tools */
+
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import Arrow from '../../assets/forward_arrow.svg'
 
 
 /*  Component */
+
 function Carousel({ slides }) {
   const [currentSlide, setCurrentSlide] = useState(0)
 

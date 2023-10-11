@@ -1,3 +1,6 @@
+/*  Import React */
+import React from 'react'
+
 /*  Component */
 function Card({ title, picture }) {
   return (

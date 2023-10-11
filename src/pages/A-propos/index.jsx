@@ -1,15 +1,17 @@
-/*  Import Components */
+/*  Import Data  and the Images */
+import React from 'react'
 import Banner from '../../components/Banner'
 import Collapse from '../../components/Collapse'
+import aboutBanner from '../../assets/banner_aboutkasa.png'
 
-/*  Import image */
-import aboutBanner from '../../assets/banner_aboutkasa.png'   
+
 
 /*  Import Data */
+
 const values = [
   {
     title: 'Fiabilité',
-    text: 'Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes.',
+    text: 'Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.',
   },
   {
     title: 'Respect',
@@ -25,17 +27,22 @@ const values = [
   },
 ]
 
+
+/*  Component */
+
 function AboutKasa() {
-  
   return (
     <div>
+      {/* Render the banner component */}
       <Banner
         picture={aboutBanner}
         title=""
         className="banner banner--higher"
       />
+
       <section className="kasa-values">
         {values.map((item) => (
+          // Render a Collapse component for each value
           <Collapse
             key={item.title}
             title={item.title}
@@ -48,4 +55,5 @@ function AboutKasa() {
   )
 }
 
-export default AboutKasa  
+export default AboutKasa
+

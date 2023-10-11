@@ -1,4 +1,5 @@
-/*  Import Images */
+/*  Import tools and the Images */
+import React from 'react'
 import whitelogo from '../../assets/logo_white.svg'
 
 /*  Component */
@@ -12,3 +13,6 @@ function Footer() {
 }
 
 export default Footer
+
+
+
