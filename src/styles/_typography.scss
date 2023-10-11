@@ -1,4 +1,4 @@
- /* Settle global base for typography */
+ /* Styles for the  typography */
 * {
     font-family: 'Montserrat', sans-serif;
     color: $color-primary;
@@ -12,7 +12,7 @@ ul, li {
     list-style-type: none;
 }
 
-/*  Specific categories */
+/*  Specific  */
 .active-link {
     text-decoration: underline;
 }

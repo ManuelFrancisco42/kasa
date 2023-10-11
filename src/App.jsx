@@ -1,4 +1,3 @@
-
 /* Import tools, styles, pages and components*/
 
 import React from 'react'
@@ -12,7 +11,6 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 
 /*  Component */
-
 
 function App() {
   return (
@@ -36,6 +34,3 @@ function App() {
 }
 
 export default App
-
-
-

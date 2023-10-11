@@ -1,4 +1,7 @@
-/*  This Will Expand Icon for Collapse Component  */
+
+ /* Styles for the   Component   */
+
+/*   Expand Icon for Collapse */
 .expand_icon {
     color: white;
     transition: transform 200ms ease-in-out;
@@ -12,7 +15,7 @@
 }
 
 
-/* Arrow Icon for the Carousel Component  */
+/* Styles for the Arrow Icon  Carousel   */
 .arrow {
         height: 80px;
         @include smartphone-responsive {

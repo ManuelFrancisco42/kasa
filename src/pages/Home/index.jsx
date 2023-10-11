@@ -1,4 +1,3 @@
-
 /*  Import tools, components and images */
 
 import React from 'react'
@@ -7,8 +6,6 @@ import Banner from '../../components/Banner'
 import Card from '../../components/Card'
 import homeBanner from '../../assets/banner_home.png'
 import rentalList from '../../data/logements.json'
-
-
 
 /*  Component */
 
@@ -25,11 +22,9 @@ function Home() {
       <section className="rental-section">
         <div className="rental-section__cards-container">
           {rentalList.map((rental) => (
-
             // Create a link to the rental's details page
 
             <Link to={`/logement/${rental.id}`} key={rental.id}>
-
               {/* Render a card for each rental */}
               <Card picture={rental.cover} title={rental.title} />
             </Link>
@@ -41,4 +36,3 @@ function Home() {
 }
 
 export default Home
-

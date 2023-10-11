@@ -1,27 +1,21 @@
- 
-
 /* Import tools, data, and components*/
 
-import React from 'react';
+import React from 'react'
 
 import { useParams } from 'react-router-dom'
 import { Navigate } from 'react-router-dom'
 
-
 // import { useParams, useNavigate } from 'react-router-dom';
-import rentalList from '../../data/logements.json';
-import Carousel from '../../components/Carousel';
-import Collapse from '../../components/Collapse';
-import Rating from '../../components/Rating';
-import Tags from '../../components/Tags';
-
- 
+import rentalList from '../../data/logements.json'
+import Carousel from '../../components/Carousel'
+import Collapse from '../../components/Collapse'
+import Rating from '../../components/Rating'
+import Tags from '../../components/Tags'
 
 /*  Component */
- 
+
 function Rental() {
   const { rentalId } = useParams()
-    
 
   const rental = rentalList.find((item) => item.id === rentalId)
 
@@ -84,13 +78,4 @@ function Rental() {
   )
 }
 
-export default Rental;
-
-
-
-
-
-
-
-
-
+export default Rental

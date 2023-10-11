@@ -6,7 +6,6 @@ import expandArrow from '../../assets/expand_arrow.svg'
 
 /*  Component */
 
-
 function Collapse({ title, text, className }) {
   const [open, setOpen] = useState(false)
 

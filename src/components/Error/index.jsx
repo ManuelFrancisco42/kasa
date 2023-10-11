@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 /*  Component */
 
- function Error() {
+function Error() {
   return (
     <div className="error">
       <h1 className="error__title">404</h1>
@@ -17,7 +17,6 @@ import { Link } from 'react-router-dom'
       </Link>
     </div>
   )
-} 
-
+}
 
 export default Error
